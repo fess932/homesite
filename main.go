@@ -11,5 +11,5 @@ func main() {
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("OHHHHH"))
 	})
-	http.ListenAndServe(":3000", r)
+	http.ListenAndServe(":80", r)
 }
